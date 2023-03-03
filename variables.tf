@@ -29,6 +29,12 @@ variable "local_host" {
   default="127.0.0.1"
 }
 
+variable "local_port" {
+  type = number
+  description = "The local port number"
+  default = -1
+}
+
 variable "target_host" {
   type = string
   description = "The target host. Name will be resolved by gateway"
